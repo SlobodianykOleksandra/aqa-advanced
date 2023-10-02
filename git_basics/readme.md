@@ -1,0 +1,1 @@
+It`s test file with text in new folder on new branch
