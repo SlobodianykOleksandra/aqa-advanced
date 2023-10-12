@@ -1,11 +1,11 @@
 import chalk from "chalk";
 
-let dogWeight = 28
+const dogWeight = 28
 const DOG_NAME = 'Shakira'
-let isHealthy = true
-let dogPassportNumber = null
+const isHealthy = true
+const dogPassportNumber = null
 let dogBreed
-let dogFullInfo = `The dog name is ${DOG_NAME}, Weight: ${dogWeight}kg, Good health: ${isHealthy}, Passport number: ${dogPassportNumber}, Breed: ${dogBreed}`
+const dogFullInfo = `The dog name is ${DOG_NAME}, Weight: ${dogWeight}kg, Good health: ${isHealthy}, Passport number: ${dogPassportNumber}, Breed: ${dogBreed}`
 
 console.log(chalk.inverse.cyanBright.bgWhiteBright.bold(`Full information: ${dogFullInfo}`))
 console.log(chalk.italic(`A weight between 20-60kg is`),chalk.inverse.greenBright.bgWhiteBright('OK'),chalk.bold.greenBright(`. Your dog has ${dogWeight}kg`))

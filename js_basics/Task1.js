@@ -1,7 +1,7 @@
-let catWeight = 6
+const catWeight = 6
 const CAT_NAME = 'Night'
-let isHealthy = true
-let catPassportNumber = null
+const isHealthy = true
+const catPassportNumber = null
 let catBreed
 
 console.log('Cat weight = '+catWeight+' kg')
