@@ -1,11 +1,20 @@
 function defineAdult(age){
-    if (age >= 18){
-        console.log(`The person of ${age}y.o is ADULT`)
-        return true
+    return age >= 18
+}
+function showResult(enterAge){
+    if (typeof enterAge ==='number' && defineAdult(enterAge)===true){
+        console.log(`The person of ${enterAge}y.o is ADULT`)
+    }
+    else if(typeof enterAge ==='number' && defineAdult(enterAge)===false){
+        console.log(`The person of ${enterAge}y.o is NOT adult`)
     }else {
-        console.log(`The person of ${age}y.o is NOT adult`)
-        return false
+        throw new Error('Wrong value')
     }
 }
-defineAdult(25)
-defineAdult(15)
+try {
+    showResult(19)
+    showResult(10)
+    showResult('lalala')
+}catch (err){
+    console.log(err.message)
+}
