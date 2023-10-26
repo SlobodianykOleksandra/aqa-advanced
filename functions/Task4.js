@@ -1,21 +1,26 @@
 function divide(numerator,denominator){
-    try {
-        if (denominator === 0 || !Number.isInteger(numerator) || !Number.isInteger(denominator)) {
-            throw new Error(`Wrong input value: numerator and denominator must be numbers, denominator cannot be equal to 0`)
-        }
-        else {
-            const result = (numerator / denominator)//.toFixed(2)
-            console.log(`The result of division ${numerator} on ${denominator} is ${result}`)
-            return result
-        }
-    }catch (err1) {
-        console.log(err1.message)
-    }finally {
-        console.log('The work is completed')
+    if (denominator === 0){
+        throw new Error('Error: denominator cannot be equal to 0')
+    }else if (!Number.isInteger(numerator) || !Number.isInteger(denominator)){
+        throw new Error('Error: numerator and denominator must be numbers')
+    }else {
+        return (numerator / denominator)
     }
 }
-divide(72,8)
-divide(0,7)
-divide(10,0)
-divide('NaN',5)
-divide(3,'5')
+
+try {
+    const result1 = divide(72,8)
+    console.log(result1)
+    const result2 = divide(0,7)
+    console.log(result2)
+    const result3 = divide(10,0)
+    console.log(result3)
+    const result4 = divide('NaN',5)
+    console.log(result4)
+    const result5 = divide(3,'5')
+    console.log(result5)
+}catch (err){
+    console.log(err.message)
+}finally {
+    console.log('The work is completed')
+}
