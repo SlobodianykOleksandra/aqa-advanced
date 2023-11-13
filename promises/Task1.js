@@ -1,5 +1,5 @@
-function printTextWithDelay (text,delay){
-    setTimeout(()=>console.log(text),delay)
+function printTextWithDelay (text, delay) {
+  setTimeout(() => console.log(text), delay)
 }
 const waitingText = printTextWithDelay('Thanx for waiting!', 4_000)
 const greetText = printTextWithDelay('Welcome to our program ☺', 1_000)

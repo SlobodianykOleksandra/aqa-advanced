@@ -1,4 +1,4 @@
-const firstArray = ['kitchen','bathroom','bedroom']
+const firstArray = ['kitchen', 'bathroom', 'bedroom']
 const secondArray = ['living room', 'playroom']
 const concatArray = firstArray.concat(secondArray)
 
