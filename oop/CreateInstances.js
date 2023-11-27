@@ -1,5 +1,5 @@
-import {Book} from "./Book.js";
-import {EBook} from "./EBook.js";
+import { Book } from './Book.js'
+import { EBook } from './EBook.js'
 
 // Task1 - class Book
 console.log('TASK 1 - CREATE BOOK INSTANCES')
@@ -17,10 +17,9 @@ adultsEbook.printInfo()
 const youngAdultsEbook = new EBook('FB2', 'The Last Wish', 'Andrzej Sapkowski', 1993, false)
 youngAdultsEbook.printInfo()
 
-
 // Task3 - Getters/Setters
 console.log('TASK 3.1 GET/SET FOR BOOK')
-const validateBook = new Book(1998, true,'Something14',0)
+const validateBook = new Book(1998, true, 'Something14', 0)
 console.log(validateBook.title)
 validateBook.title = true
 validateBook.title = 'The Prestige'
@@ -47,7 +46,7 @@ console.log(validateBook.isAvailable)
 console.log('******************')
 
 console.log('TASK 3.2 GET/SET FOR E-BOOK')
-const verifyEBook = new EBook(123,1998, 'C. S. Lewis',1950,true)
+const verifyEBook = new EBook(123, 1998, 'C. S. Lewis', 1950, true)
 
 console.log(verifyEBook.title)
 verifyEBook.title = true
@@ -65,5 +64,5 @@ console.log('TASK 4 FIND-OLDEST-BOOK')
 Book.findOldestBook([childrensBook, teensBook, adultsBook, adultsEbook, youngAdultsEbook, validateBook, verifyEBook])
 
 console.log('TASK 5 CREATE-E-BOOK')
-const eChildrensBook = EBook.fromBook(childrensBook,'PDF')
+const eChildrensBook = EBook.fromBook(childrensBook, 'PDF')
 eChildrensBook.printInfo()
